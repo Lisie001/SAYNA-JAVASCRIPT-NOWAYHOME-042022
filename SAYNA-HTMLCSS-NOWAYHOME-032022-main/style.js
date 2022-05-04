@@ -74,6 +74,33 @@ function bordering(){
     logo.style.backgroundColor="";
 }
 
+/*header hover effect*/
+/*add highlight effect on header text*/
+var header=document.querySelector('.menu');
+header.addEventListener('mouseover', underlined);
+function underlined(){
+    header.style.textDecoration="underline"
+    header.style.textDecorationColor="white"
+}
+/*remove highlight effect on header text*/
+header.addEventListener('mouseout', unhightlighted);
+function unhightlighted(){
+    header.style.textDecoration="none"
+    header.style.textDecorationColor="none"
+}
 
-
-console.log("hello")
+/*Fade effect for web page tittle and subtittle*/
+// var fadeEffect=document.querySelector('.titre'); //must specify the right class of element
+// fadeEffect.addEventListener('opacity_value', FadeIn);
+// function FadeIn(id,millisec){
+//    var obj=getReferenceToDiv(id);
+//    changeOpac(0,obj);
+//    var timer=0;
+//    var speed=Math.round(millisec/100);
+//    var o=0;
+//    for(var a=0;a<100;a++){
+//        setTimeout(function(){changeOpac(o,ogj);o--;},(timer*speed))
+//        timer++;
+//    }
+// }
+ 
