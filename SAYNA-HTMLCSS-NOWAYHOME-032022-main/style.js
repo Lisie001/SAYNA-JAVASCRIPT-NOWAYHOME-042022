@@ -3,26 +3,39 @@
 var btneffect1=document.querySelector('.button1');
 /*definition of effect1*/
 btneffect1.addEventListener('mouseover', highlight);
-// callback function
-// btneffect1.array.forEach(button => {
-//     btneffect1.addEventListener('mouseover',()=>{highlight(button)})
-// });
+
+
+// call back function
+// var btneffect1=document.querySelectorAll('.button1');
+// for(let i = 0;  < btneffect1.length ; i++){
+// btneffect1[i].addEventListener('mouseover', highlight);
+// }
+// function highlight() {
+//     btneffect1[i].style.color="var(--white-ad-color)";
+//     btneffect1[i].style.backgroundColor="var(--transparent-ad-color)";
+//     btneffect1[i].style.boxShadow="";
+//     btneffect1[i].style.border="var(--white-ad-color) 2px solid";
+// }
+// btneffect1[i].addEventListener('mouseout', initiate);
+// }
+// function initiate() {
+//     btneffect1[i].style.color="var(--primary-ad-color)";
+//     btneffect1[i].style.backgroundColor="";
+//     btneffect1[i].style.boxShadow="";
+// }
+
+
 /*function creation related to the effect1*/
-function highlight(button){
+function highlight(){
     btneffect1.style.color="var(--white-ad-color)";
     btneffect1.style.backgroundColor="var(--transparent-ad-color)";
     btneffect1.style.boxShadow="";
     btneffect1.style.border="var(--white-ad-color) 2px solid";
 }
-
 /*definition of effect2*/
 btneffect1.addEventListener('mouseout', initiate);
-// // callback function
-// btneffect1.array.forEach(button => {
-//     btneffect1.addEventListener('mouseout',()=>{highlight(button)})
-// });
 /*function creation related to the effect2*/
-function initiate(button){
+function initiate(){
     /*collect initial style color*/
     btneffect1.style.color="var(--primary-ad-color)";
     /*collect initial background color*/
@@ -63,7 +76,7 @@ var logo=document.querySelector('.media');
 logo.addEventListener('mouseover', border);
 /*function related to flyover effect*/
 function border(){
-    logo.style.filter="invert(100%)";
+    logo.style.filter="invert(80%)";
     logo.style.backgroundColor="var(--transparent-ad-color)";
 }
 /*remove flyover effect to logoes*/
